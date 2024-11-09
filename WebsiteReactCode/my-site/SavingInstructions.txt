@@ -1,0 +1,10 @@
+first ensure you are in the correct file on command line (should end in "\my-site")
+then run the following
+git branch -m main 
+git add .
+git commit -m {message}
+git push
+npm run build
+npm run deploy
+
+deploying can take up to a minute maybe longer be patient and you can check on progress in the repo on github
