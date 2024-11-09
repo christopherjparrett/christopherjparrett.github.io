@@ -179,7 +179,6 @@ function App() {
             <p class="left-container">
                 <div class="CenterText">About Me<br></br></div>
                 Name: Christopher Parrett<br></br>
-                Birthday: November 1, 2003<br></br>
                 Location: Florida<br></br>
                 Email: christopher.parrett.work@gmail.com<br></br>
                 Phone: (904) 829-7394 <br></br>
