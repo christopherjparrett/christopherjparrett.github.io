@@ -9,31 +9,18 @@ import projects from '../Projects';
 import { useNavigate } from 'react-router-dom';
 function App() {
   /*This Section Decides if the user is on a mobile device and sends them to a mobile page*/ 
-  const [isMobileView, setIsMobileView] = useState(false);
-  const navigate = useNavigate(); // React Router's navigate function
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const checkIfMobile = () => {
-      // Check window width and/or use isMobile from react-device-detect
-      if (window.innerWidth <= 768) {
-        setIsMobileView(true); // Set flag to navigate to mobile page
-      } else {
-        setIsMobileView(false); // Set flag to stay on the home page
-      }
-    };
-
-    checkIfMobile(); // Check on initial load
-    window.addEventListener('resize', checkIfMobile); // Listen for resize events
-
-    return () => window.removeEventListener('resize', checkIfMobile); // Cleanup listener
-  }, []);
-
-  useEffect(() => {
-    if (isMobileView) {
-      // Redirect to the mobile page using React Router's navigate function
-      navigate('/mobilePage'); // This is an absolute path
+    // Check localStorage to see if the user has already been redirected
+    const hasRedirected = localStorage.getItem('hasRedirected');
+    
+    if (!hasRedirected && window.innerWidth <= 768) {
+      // Redirect only if the user hasn't already been redirected and is on a mobile device
+      localStorage.setItem('hasRedirected', 'true');  // Set to remember the redirection
+      navigate('/mobilePage');
     }
-  }, [isMobileView, navigate]); // Run when isMobileView changes
+  }, [navigate]);
 
 
 
