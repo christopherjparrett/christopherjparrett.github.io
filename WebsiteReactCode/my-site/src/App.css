@@ -76,7 +76,7 @@ h6{
   position: relative; /* Establish positioning context for content */
   z-index: 2; /* Make sure content appears above the image */
   /* Add padding or margins as needed */
-  padding: 20px;
+  padding: 1px;
 }
 /* Style the buttons */
 .buttons a {
