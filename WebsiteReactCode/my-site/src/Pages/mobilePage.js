@@ -6,7 +6,6 @@ const MobilePage = () => {
 
   const handleBackToHome = () => {
     // Remove the redirection flag so it doesn't redirect again
-    localStorage.removeItem('hasRedirected');
     navigate('/');
   };
 
