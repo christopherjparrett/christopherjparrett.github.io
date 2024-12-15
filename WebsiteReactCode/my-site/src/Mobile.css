@@ -52,11 +52,14 @@ h6{
   position: fixed; /* Fixes the overlay in place */
   top: 0; /* Align to the top */
   left: 50%; /* Align to the left */
+  right: 50%;
   width: 100%; /* Full width */
-  height: 6%; /* Not Full height so overlay doesnt cover other elements with hover aspects */
+  height: 7vw; /* Not Full height so overlay doesnt cover other elements with hover aspects */
   margin-top:0px;
   color: white; /* Text color */
   display: flex; /* Center content */
+  flex-direction: row;
+  overflow: hidden;
   transform: translate(-50%, 0%);
   justify-content: center; /* Center horizontally */
   z-index: 1000; /* Ensure it’s above other content */
@@ -65,6 +68,8 @@ h6{
   /*this rounds the edges at the bottom*/
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  display: inline-block;
+  flex: 1 1 auto
 }
 /*style for the background image*/
 .background-image {
@@ -82,13 +87,22 @@ h6{
   padding: 1px;
 }
 /* Style the buttons */
+/* Style for the button links */
 .buttons a {
   color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
-  font-size: 100%;
+  font-size: 4vw; /* You can adjust the font size to suit your needs */
   line-height: 100%;
-  border-radius: 4px;
+  padding: 1vw; /* Add padding for button size */
+  border-radius: 5px; /* Rounded corners */
+  height: 7vw;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  flex: 1 1 120px; /* Allow buttons to grow and shrink, with a base size of 120px */
+  min-width: 0px; /* Minimum width to prevent buttons from becoming too small */
+  max-width: 200px; /* Maximum width to prevent buttons from becoming too large */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  display: inline-block; /* Make the link act like an inline block */
 }
 
 /* Change the background color on mouse-over */
@@ -97,22 +111,28 @@ h6{
   color: black;
 }
 
-/* Style the active/current link*/
+/* Style the active/current link */
 .buttons a.active {
   background-color: rgb(1, 61, 81);
   color: white;
 }
 
-/* Make the buttons centered */
+/* Make the buttons container */
 .buttons {
-  text-align: center;
+  display: flex; /* Flexbox layout for buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  width: 100%; /* Take up the full width of the overlay */
+  padding: 0 10px; /* Prevent buttons from touching the edges */
+  flex-wrap: nowrap; /* Prevent the buttons from wrapping to the next line */
+  font-size: 4vw;
 }
+
 
 .header-name{
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  font-size: 150%;
-  margin-top: 200px;
+  font-size: 100%;
+  margin-top: 30%;
   background: transparent;
   background-color: transparent;
 }

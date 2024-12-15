@@ -8,12 +8,6 @@ import React, {useState,useEffect} from 'react';
 import projects from '../Projects';
 import { useNavigate } from 'react-router-dom';
 const MobilePage = () => {
-  const navigate = useNavigate();
-
-  const handleBackToHome = () => {
-    // Remove the redirection flag so it doesn't redirect again
-    navigate('/');
-  };
   const skills = [
     { type: 'C', level: 80 },
     { type: 'Python', level: 70 },
@@ -99,12 +93,13 @@ const MobilePage = () => {
             href="#Contact"
             className={activeSection === 'Contact' ? 'active' : ''}
             onClick={(e) => { e.preventDefault(); scrollToSection('Contact'); }}
+            style={{position:'right'}}
             >
               Contact
             </a>
         </div>
     </div>
-        <img src={Sunset} class = "background-image" alt = "Picture of mountains during the sunset"></img>
+        <img src={Sunset} class = "background-image" alt = "Mountains during the sunset"></img>
         <div class = "content" id="Home">
                 <h1><div class="header-name">
                     Christopher<br></br>
@@ -150,7 +145,7 @@ const MobilePage = () => {
               <br></br>
               <h3 style={{marginTop:'40px',color:'white'}}>Experience</h3>
               <div class="container" style={{display:'flex'}}>
-              <p class="left-container" style={{height:'350px'}}>
+              <p class="left-container" style={{height:'100%',textWrap:"wrap"}}>
               <h5>Education</h5>
               <ul>
                 <li style={{lineHeight: '20px',
@@ -161,8 +156,7 @@ const MobilePage = () => {
                               borderRadius: '0px', 
                               padding: '0px',
                               color: 'white', 
-                              fontSize: '20px',
-                              textWrap: "normal"}}>
+                              fontSize: '20px',}}>
                               I attended Creekside from 2018 to 2022,
                               where I was enrolled in their Cybersecurity
                               program throughout the entire duration 
@@ -176,8 +170,7 @@ const MobilePage = () => {
                               borderRadius: '0px', 
                               padding: '0px',
                               color: 'white', 
-                              fontSize: '20px',
-                              textWrap: "normal"}}>
+                              fontSize: '20px',}}>
                               I am currently attending UCF expecting 
                               to get my Computer Science degree two 
                               semesters early at the end of
@@ -185,7 +178,7 @@ const MobilePage = () => {
                 </li>
               </ul>
               </p>
-              <p class="right-container">
+              <p class="right-container" style={{height:'100%',textWrap:"wrap"}}>
               <h5>Work Experience</h5>
               <ul> {/*This section is a list for ease of change when I have more positions to list */} 
                 <li style={{lineHeight: '20px',
