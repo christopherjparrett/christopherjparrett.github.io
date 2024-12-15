@@ -150,11 +150,7 @@ const MobilePage = () => {
                               borderRadius: '0px', 
                               padding: '0px',
                               fontSize: '20px'}}>Creekside High School
-                    <p style={{lineHeight: '20px',
-                              borderRadius: '0px', 
-                              padding: '0px',
-                              color: 'white', 
-                              fontSize: '20px',}}>
+                    <p>
                               I attended Creekside from 2018 to 2022,
                               where I was enrolled in their Cybersecurity
                               program throughout the entire duration 
@@ -164,11 +160,7 @@ const MobilePage = () => {
                               borderRadius: '0px', 
                               padding: '0px', 
                               fontSize: '20px'}}>University of Central Florida
-                    <p style={{lineHeight: '20px',
-                              borderRadius: '0px', 
-                              padding: '0px',
-                              color: 'white', 
-                              fontSize: '20px',}}>
+                    <p>
                               I am currently attending UCF expecting 
                               to get my Computer Science degree two 
                               semesters early at the end of
@@ -183,12 +175,7 @@ const MobilePage = () => {
                               borderRadius: '0px', 
                               padding: '0px',
                               fontSize: '20px'}}>Cashier (2021-2022)
-                    <p style={{lineHeight: '20px',
-                              borderRadius: '0px', 
-                              padding: '0px',
-                              color: 'white', 
-                              fontSize: '20px',
-                              textWrap: "wrap"}}>
+                    <p>
                               I was employed at The Fresh Market as a 
                               cashier where I worked with other team 
                               members to provide the best customer 
