@@ -329,9 +329,8 @@ const MobilePage = () => {
             <br></br>
             <h3 style={{marginTop:'30px',color:'white',marginBottom:'30px'}}>Contact</h3>
             <h5>Contact Me Here</h5>
-            <div class='container' style={{}}>
+            <div class='container' style={{justifyContent: 'center',alignItems:'center'}}>
               <div style={{width: '100%', 
-                          borderRadius: '20px',
                           backgroundColor: '#5b646e',
                           height: '200px',
                           justifyContent: 'center',
@@ -342,7 +341,6 @@ const MobilePage = () => {
                           <p style={{textAlign:'center'}}>+1 (904) 829-7394</p>
                           </div>
               <div style={{width: '100%', 
-                          borderRadius: '20px',
                           backgroundColor: '#5b646e', 
                           height: '200px',
                           justifyContent: 'center',
@@ -353,7 +351,6 @@ const MobilePage = () => {
                           <p style={{textAlign:'center'}}>Christopher.Parrett.work@gmail.com</p>
                           </div>
               <div style={{width: '100%', 
-                          borderRadius: '20px',
                           backgroundColor: '#5b646e', 
                           height: '200px',
                           justifyContent: 'center',
