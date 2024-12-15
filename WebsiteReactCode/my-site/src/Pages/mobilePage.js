@@ -107,7 +107,8 @@ const MobilePage = () => {
         <img src={Sunset} class = "background-image" alt = "Picture of mountains during the sunset"></img>
         <div class = "content" id="Home">
                 <h1><div class="header-name">
-                    Christopher Parrett
+                    Christopher<br></br>
+                    Parrett
                 </div></h1>
                 <h2><div class="Blue-Text">
                     Background image: Rocky Mountains by Christopher Parrett
@@ -329,7 +330,7 @@ const MobilePage = () => {
             <br></br>
             <h3 style={{marginTop:'30px',color:'white',marginBottom:'30px'}}>Contact</h3>
             <h5>Contact Me Here</h5>
-            <div class='container' style={{justifyContent: 'center',alignItems:'center'}}>
+            <div class='container' style={{justifyContent: 'center',alignItems:'center',padding:'0px'}}>
               <div style={{width: '100%', 
                           backgroundColor: '#5b646e',
                           height: '200px',
