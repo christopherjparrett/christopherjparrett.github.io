@@ -149,7 +149,7 @@ const MobilePage = () => {
             <div class="Region1"> 
               <br></br>
               <h3 style={{marginTop:'40px',color:'white'}}>Experience</h3>
-              <div class="container">
+              <div class="container" style={{display:'flex'}}>
               <p class="left-container" style={{height:'350px'}}>
               <h5>Education</h5>
               <ul>
