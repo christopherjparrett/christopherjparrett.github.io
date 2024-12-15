@@ -1,14 +1,21 @@
+// App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import necessary router components
-import HomePage from './Pages/standardPage.js';  // Your home page component
-import MobilePage from './Pages/mobilePage.js';  // Your mobile page component
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/standardPage';  // Your standard homepage component
+import MobilePage from './Pages/mobilePage';  // Your mobile page component
+import DynamicCSSLoader from './DynamicCSSLoader'; // Component responsible for dynamic CSS loading
 
 const App = () => {
   return (
-    <Router>  {/* Ensure Router is wrapping your entire app */}
+    <Router>
+      {/* DynamicCSSLoader will dynamically load and unload the correct stylesheets */}
+      <DynamicCSSLoader />
+
+      {/* Define your Routes */}
       <Routes>
-        <Route path="/" element={<HomePage />} />  {/* Route for homepage */}
         <Route path="/mobilePage" element={<MobilePage />} />  {/* Route for mobile page */}
+        <Route path="/standardPage" element={<HomePage />} />  {/* Route for standard homepage */}
+        <Route path="/" element={<HomePage />} />  {/* Optional: Home route */}
       </Routes>
     </Router>
   );

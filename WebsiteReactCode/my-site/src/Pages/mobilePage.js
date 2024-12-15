@@ -1,4 +1,3 @@
-import '../Mobile.css';
 import Sunset from '../SunSetMountains.jpg';
 import LLLogo from '../LinkedInLogo.png';
 import EmLogo from '../EmailLogo.png';
@@ -6,7 +5,33 @@ import PhLogo from '../PhoneIcon.png'
 import SkillBar from 'react-skillbars';
 import React, {useState,useEffect} from 'react';
 import projects from '../Projects';
+import { useNavigate } from 'react-router-dom';
 const MobilePage = () => {
+  const navigate = useNavigate();
+
+  // Track window width state
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // Effect to detect window size change and navigate if necessary
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Navigate if the window width is greater than 768
+    if (windowWidth > 768) {
+      navigate('/standardPage');
+    }
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [windowWidth, navigate]); // Re-run effect when windowWidth or navigate changes
+
   const skills = [
     { type: 'C', level: 80 },
     { type: 'Python', level: 70 },
@@ -14,10 +39,12 @@ const MobilePage = () => {
     { type: 'React', level: 60 },
     { type: 'HTML', level: 40 },
   ];
-  const [activeSection,setActiveSection] = useState('Home');
+
+  const [activeSection, setActiveSection] = useState('Home');
+
   const handleScroll = () => {
     const sections = ['Home', 'About', 'Experience', 'Projects', 'Contact'];
-    let currentSection = sections.find(section => {
+    let currentSection = sections.find((section) => {
       const element = document.getElementById(section);
       const rect = element.getBoundingClientRect();
       return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
@@ -26,16 +53,19 @@ const MobilePage = () => {
       setActiveSection(currentSection);
     }
   };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   const scrollToSection = (section) => {
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
     setActiveSection(section);
   };
+
   /*This is for our sort feature for projects*/
   const [selectedLanguages, setSelectedLanguages] = useState([]);
   const [hoveredProjectId, setHoveredProjectId] = useState(null);  // New state to track hovered project
@@ -54,10 +84,8 @@ const MobilePage = () => {
   const filteredProjects = selectedLanguages.length === 0
     ? projects
     : projects.filter(project => selectedLanguages.includes(project.language));
-
   return (
     <>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <div class = "overlay">
         <div class="buttons">
@@ -110,7 +138,7 @@ const MobilePage = () => {
         </div>
     <div id = "About">
         <br></br>
-        <h3   style={{marginTop:'40vh'}}>About</h3>
+        <h3   style={{marginTop:'50vh'}}>About</h3>
         <h4>Let Me Introduce Myself</h4>
         <body>
             <p class = "introduction">

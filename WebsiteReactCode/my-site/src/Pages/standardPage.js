@@ -1,4 +1,4 @@
-import '../App.css';
+
 import Sunset from '../SunSetMountains.jpg';
 import LLLogo from '../LinkedInLogo.png';
 import EmLogo from '../EmailLogo.png';
@@ -6,23 +6,32 @@ import PhLogo from '../PhoneIcon.png'
 import SkillBar from 'react-skillbars';
 import React, {useState,useEffect} from 'react';
 import projects from '../Projects';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 function App() {
-  /*This Section Decides if the user is on a mobile device and sends them to a mobile page*/ 
   const navigate = useNavigate();
 
+  // Track window width state
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // Effect to detect window size change and navigate if necessary
   useEffect(() => {
-    // Check localStorage to see if the user has already been redirected
-    const hasRedirected = localStorage.getItem('hasRedirected');
-    
-    if (!hasRedirected && window.innerWidth <= 768) {
-      // Redirect only if the user hasn't already been redirected and is on a mobile device
-      localStorage.setItem('hasRedirected', 'true');  // Set to remember the redirection
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Navigate if the window width is greater than 768
+    if (windowWidth <= 768) {
       navigate('/mobilePage');
     }
-  }, [navigate]);
 
-
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [windowWidth, navigate]); // Re-run effect when windowWidth or navigate changes
 
   const skills = [
     { type: 'C', level: 80 },
@@ -31,10 +40,12 @@ function App() {
     { type: 'React', level: 60 },
     { type: 'HTML', level: 40 },
   ];
-  const [activeSection,setActiveSection] = useState('Home');
+
+  const [activeSection, setActiveSection] = useState('Home');
+
   const handleScroll = () => {
     const sections = ['Home', 'About', 'Experience', 'Projects', 'Contact'];
-    let currentSection = sections.find(section => {
+    let currentSection = sections.find((section) => {
       const element = document.getElementById(section);
       const rect = element.getBoundingClientRect();
       return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
@@ -43,16 +54,19 @@ function App() {
       setActiveSection(currentSection);
     }
   };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   const scrollToSection = (section) => {
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
     setActiveSection(section);
   };
+
   /*This is for our sort feature for projects*/
   const [selectedLanguages, setSelectedLanguages] = useState([]);
   const [hoveredProjectId, setHoveredProjectId] = useState(null);  // New state to track hovered project
@@ -74,7 +88,6 @@ function App() {
 
   return (
     <>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <div class = "overlay">
         <div class="buttons">
             <a
@@ -114,7 +127,7 @@ function App() {
             </a>
         </div>
     </div>
-        <img src={Sunset} class = "background-image" alt = "Picture of mountains during the sunset"></img>
+        <img src={Sunset} class = "background-image" alt = "Mountains during the sunset"></img>
         <div class = "content" id="Home">
                 <h1><div class="header-name">
                     Christopher Parrett
@@ -126,7 +139,7 @@ function App() {
     <div id = "About">
         <br></br>
         <br></br>
-        <h3>About</h3>
+        <h3 style={{marginTop:'40vh'}}>About</h3>
         <h4>Let Me Introduce Myself</h4>
         <body>
             <p class = "introduction">
@@ -137,7 +150,7 @@ function App() {
                 My love for technology drives me to create innovative solutions and explore the endless possibilities of machine learning.
                  I look forward to applying my skills and knowledge in real-world projects and making a meaningful impact in the tech industry.
             </p>
-            <div class="container">
+            <div class="container" style={{textWrap:'wrap', display:'flex',alignItems:'stretch'}}>
             <p class="left-container">
                 <div class="CenterText">About Me<br></br></div>
                 Name: Christopher Parrett<br></br>
@@ -158,7 +171,7 @@ function App() {
             <div class="Region1"> 
               <br></br>
               <h3 style={{marginTop:'40px',color:'white'}}>Experience</h3>
-              <div class="container">
+              <div class="container" style={{textWrap:'wrap', display:'flex',alignItems:'stretch'}}style={{textWrap:'wrap', display:'flex',alignItems:'stretch'}}>
               <p class="left-container">
               <h5>Education</h5>
               <ul>
