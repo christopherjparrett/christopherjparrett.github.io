@@ -162,7 +162,7 @@ const MobilePage = () => {
                               padding: '0px',
                               color: 'white', 
                               fontSize: '20px',
-                              textWrap: "pretty"}}>
+                              textWrap: "normal"}}>
                               I attended Creekside from 2018 to 2022,
                               where I was enrolled in their Cybersecurity
                               program throughout the entire duration 
@@ -177,7 +177,7 @@ const MobilePage = () => {
                               padding: '0px',
                               color: 'white', 
                               fontSize: '20px',
-                              textWrap: "pretty"}}>
+                              textWrap: "normal"}}>
                               I am currently attending UCF expecting 
                               to get my Computer Science degree two 
                               semesters early at the end of
@@ -197,7 +197,7 @@ const MobilePage = () => {
                               padding: '0px',
                               color: 'white', 
                               fontSize: '20px',
-                              textWrap: "pretty"}}>
+                              textWrap: "normal"}}>
                               I was employed at The Fresh Market as a 
                               cashier where I worked with other team 
                               members to provide the best customer 
@@ -329,7 +329,7 @@ const MobilePage = () => {
         </body>
     </div>
     <div id = "Contact">
-        <body class="Region1">
+        <body class="Region1" style={{justifyContent: 'center'}}>
             <br></br>
             <h3 style={{marginTop:'30px',color:'white',marginBottom:'30px'}}>Contact</h3>
             <h5>Contact Me Here</h5>
