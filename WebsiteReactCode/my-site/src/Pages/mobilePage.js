@@ -161,10 +161,11 @@ const MobilePage = () => {
                               borderRadius: '0px', 
                               padding: '0px',
                               color: 'white', 
-                              fontSize: '20px'}}>
-                              I attended Creekside from 2018 to 2022, <br></br>
-                              where I was enrolled in their Cybersecurity<br></br>
-                              program throughout the entire duration <br></br>
+                              fontSize: '20px',
+                              textWrap: "pretty"}}>
+                              I attended Creekside from 2018 to 2022,
+                              where I was enrolled in their Cybersecurity
+                              program throughout the entire duration 
                               of my studies.</p>
                 </li>
                 <li style={{lineHeight: '20px',
@@ -175,10 +176,11 @@ const MobilePage = () => {
                               borderRadius: '0px', 
                               padding: '0px',
                               color: 'white', 
-                              fontSize: '20px'}}>
-                              I am currently attending UCF expecting <br></br>
-                              to get my Computer Science degree two <br></br>
-                              semesters early at the end of <br></br>
+                              fontSize: '20px',
+                              textWrap: "pretty"}}>
+                              I am currently attending UCF expecting 
+                              to get my Computer Science degree two 
+                              semesters early at the end of
                               Summer 2025.</p>
                 </li>
               </ul>
@@ -194,13 +196,14 @@ const MobilePage = () => {
                               borderRadius: '0px', 
                               padding: '0px',
                               color: 'white', 
-                              fontSize: '20px'}}>
-                              I was employed at The Fresh Market as a <br></br>
-                              cashier where I worked with other team <br></br>
-                              members to provide the best customer <br></br>
-                              experience possible. I also collaborated <br></br>
-                              with other departments during critical <br></br>
-                              times to help manage workloads and <br></br>
+                              fontSize: '20px',
+                              textWrap: "pretty"}}>
+                              I was employed at The Fresh Market as a 
+                              cashier where I worked with other team 
+                              members to provide the best customer 
+                              experience possible. I also collaborated 
+                              with other departments during critical 
+                              times to help manage workloads and 
                               maintain productivity.</p>
                 </li>
               </ul>
@@ -330,7 +333,7 @@ const MobilePage = () => {
             <br></br>
             <h3 style={{marginTop:'30px',color:'white',marginBottom:'30px'}}>Contact</h3>
             <h5>Contact Me Here</h5>
-            <div class='container' style={{justifyContent: 'center',alignItems:'center',padding:'0px'}}>
+            <div class='container' style={{justifyContent: 'center',alignItems:'center',padding:'0px',display:'flex',flexDirection:'column'}}>
               <div style={{width: '100%', 
                           backgroundColor: '#5b646e',
                           height: '200px',
