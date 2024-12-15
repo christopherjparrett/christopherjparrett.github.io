@@ -59,6 +59,7 @@ const MobilePage = () => {
   return (
     <>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <div class = "overlay">
         <div class="buttons">
             <a
@@ -93,7 +94,6 @@ const MobilePage = () => {
             href="#Contact"
             className={activeSection === 'Contact' ? 'active' : ''}
             onClick={(e) => { e.preventDefault(); scrollToSection('Contact'); }}
-            style={{position:'right'}}
             >
               Contact
             </a>
