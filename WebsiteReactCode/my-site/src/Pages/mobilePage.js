@@ -6,7 +6,6 @@ import PhLogo from '../PhoneIcon.png'
 import SkillBar from 'react-skillbars';
 import React, {useState,useEffect} from 'react';
 import projects from '../Projects';
-import { useNavigate } from 'react-router-dom';
 const MobilePage = () => {
   const skills = [
     { type: 'C', level: 80 },
@@ -144,7 +143,7 @@ const MobilePage = () => {
               <br></br>
               <h3 style={{marginTop:'40px',color:'white'}}>Experience</h3>
               <div class="container" style={{display:'flex'}}>
-              <p class="left-container" style={{height:'100%',textWrap:"wrap"}}>
+              <p class="left-container" style={{height:'100%',textWrap:"normal"}}>
               <h5>Education</h5>
               <ul>
                 <li style={{lineHeight: '20px',
@@ -177,7 +176,7 @@ const MobilePage = () => {
                 </li>
               </ul>
               </p>
-              <p class="right-container" style={{height:'100%',textWrap:"wrap"}}>
+              <p class="right-container" style={{height:'100%',textWrap:"normal"}}>
               <h5>Work Experience</h5>
               <ul> {/*This section is a list for ease of change when I have more positions to list */} 
                 <li style={{lineHeight: '20px',
@@ -189,7 +188,7 @@ const MobilePage = () => {
                               padding: '0px',
                               color: 'white', 
                               fontSize: '20px',
-                              textWrap: "normal"}}>
+                              textWrap: "wrap"}}>
                               I was employed at The Fresh Market as a 
                               cashier where I worked with other team 
                               members to provide the best customer 
@@ -325,7 +324,7 @@ const MobilePage = () => {
             <br></br>
             <h3 style={{marginTop:'30px',color:'white',marginBottom:'30px'}}>Contact</h3>
             <h5>Contact Me Here</h5>
-            <div class='container' style={{justifyContent: 'center',alignItems:'center',padding:'0px',display:'flex',flexDirection:'column'}}>
+            <div class='container' style={{alignItems:'center'}}>
               <div class='Contacts'>
                           <img src={PhLogo} alt="Logo" style={{maxWidth: '100px',borderRadius:'40px', height: 'auto', display: 'inline-block' }} ></img>
                           <h6 style={{justifyContent:'center'}}>Phone Number</h6>

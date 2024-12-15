@@ -6,6 +6,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  text-wrap: wrap;
 }
 .introduction{
   margin-left: 5%;
@@ -68,6 +69,7 @@ h6{
   /*this rounds the edges at the bottom*/
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  margin-left:0px;
   display: inline-block;
   flex: 1 1 auto
 }
@@ -103,6 +105,7 @@ h6{
   max-width: 200px; /* Maximum width to prevent buttons from becoming too large */
   box-sizing: border-box; /* Ensure padding is included in width calculation */
   display: inline-block; /* Make the link act like an inline block */
+  margin-left:0px;
 }
 
 /* Change the background color on mouse-over */
@@ -125,6 +128,7 @@ h6{
   padding: 0 10px; /* Prevent buttons from touching the edges */
   flex-wrap: nowrap; /* Prevent the buttons from wrapping to the next line */
   font-size: 4vw;
+  margin-left:0px;
 }
 
 
@@ -212,7 +216,6 @@ body{
 }
 
 .Contacts {
-  width: 100%; /* Remove quotes */
   background-color: #5b646e; /* Remove quotes */
   height: 200px;
   display: flex; /* Make this a flex container */
