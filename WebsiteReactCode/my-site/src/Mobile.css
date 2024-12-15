@@ -211,6 +211,15 @@ body{
   white-space: pre-wrap;
 }
 
-
+.Contacts {
+  width: 100%; /* Remove quotes */
+  background-color: #5b646e; /* Remove quotes */
+  height: 200px;
+  display: flex; /* Make this a flex container */
+  flex-direction: column; /* Align items vertically (since flex-direction is column in parent) */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text inside each contact box */
+}
 
 

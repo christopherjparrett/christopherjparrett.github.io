@@ -111,8 +111,7 @@ const MobilePage = () => {
         </div>
     <div id = "About">
         <br></br>
-        <br></br>
-        <h3>About</h3>
+        <h3   style={{marginTop:'40vh'}}>About</h3>
         <h4>Let Me Introduce Myself</h4>
         <body>
             <p class = "introduction">
@@ -327,32 +326,17 @@ const MobilePage = () => {
             <h3 style={{marginTop:'30px',color:'white',marginBottom:'30px'}}>Contact</h3>
             <h5>Contact Me Here</h5>
             <div class='container' style={{justifyContent: 'center',alignItems:'center',padding:'0px',display:'flex',flexDirection:'column'}}>
-              <div style={{width: '100%', 
-                          backgroundColor: '#5b646e',
-                          height: '200px',
-                          justifyContent: 'center',
-                          textAlign: 'center',
-                          alignItems:'center'}}>
+              <div class='Contacts'>
                           <img src={PhLogo} alt="Logo" style={{maxWidth: '100px',borderRadius:'40px', height: 'auto', display: 'inline-block' }} ></img>
                           <h6 style={{justifyContent:'center'}}>Phone Number</h6>
                           <p style={{textAlign:'center'}}>+1 (904) 829-7394</p>
                           </div>
-              <div style={{width: '100%', 
-                          backgroundColor: '#5b646e', 
-                          height: '200px',
-                          justifyContent: 'center',
-                          textAlign: 'center',
-                          alignItems:'center'}}>
+              <div class='Contacts'>
                           <img src={EmLogo} alt="Logo" style={{ maxWidth: '100px',borderRadius: '20px', height: 'auto', display: 'inline-block' }} ></img>
                           <h6 style={{justifyContent:'center'}}>Email Me At</h6>
                           <p style={{textAlign:'center'}}>Christopher.Parrett.work@gmail.com</p>
                           </div>
-              <div style={{width: '100%', 
-                          backgroundColor: '#5b646e', 
-                          height: '200px',
-                          justifyContent: 'center',
-                          textAlign: 'center',
-                          alignItems:'center'}}>
+              <div class='Contacts'>
                           <img src={LLLogo} alt="Logo" style={{ maxWidth: '100px',borderRadius: '20px', height: 'auto', display: 'inline-block' }} ></img>
                           <h6 style={{justifyContent:'center'}}>Lets Connect</h6>
                           <p style={{justifyContent:'center',textAlign:'center'}}><a target="_blank" rel="noopener noreferrer" href={'http://www.linkedin.com/in/christopher-parrett-4591452ba'}>My LinkedIn Profile</a></p>
