@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.0b160bb8.css",
-    "main.js": "/static/js/main.87c33b15.js",
+    "main.js": "/static/js/main.d73d9824.js",
     "static/js/453.209d4f9d.chunk.js": "/static/js/453.209d4f9d.chunk.js",
     "static/media/SunSetMountains.jpg": "/static/media/SunSetMountains.9cf590476defa2795194.jpg",
     "static/media/PhoneIcon.png": "/static/media/PhoneIcon.39ddbc420f326c36f94b.png",
     "index.html": "/index.html",
     "main.0b160bb8.css.map": "/static/css/main.0b160bb8.css.map",
-    "main.87c33b15.js.map": "/static/js/main.87c33b15.js.map",
+    "main.d73d9824.js.map": "/static/js/main.d73d9824.js.map",
     "453.209d4f9d.chunk.js.map": "/static/js/453.209d4f9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b160bb8.css",
-    "static/js/main.87c33b15.js"
+    "static/js/main.d73d9824.js"
   ]
 }
