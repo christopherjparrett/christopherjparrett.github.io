@@ -137,9 +137,7 @@ function App() {
                 </div></h2>
         </div>
     <div id = "About">
-        <br></br>
-        <br></br>
-        <h3 style={{marginTop:'40vh'}}>About</h3>
+        <h3 style={{marginTop:'5vh'}}>About</h3>
         <h4>Let Me Introduce Myself</h4>
         <body>
             <p class = "introduction">
@@ -171,7 +169,7 @@ function App() {
             <div class="Region1"> 
               <br></br>
               <h3 style={{marginTop:'40px',color:'white'}}>Experience</h3>
-              <div class="container" style={{textWrap:'wrap', display:'flex',alignItems:'stretch'}}style={{textWrap:'wrap', display:'flex',alignItems:'stretch'}}>
+              <div class="container" style={{textWrap:'wrap', display:'flex',alignItems:'stretch'}}>
               <p class="left-container">
               <h5>Education</h5>
               <ul>
