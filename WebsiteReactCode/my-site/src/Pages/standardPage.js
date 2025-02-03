@@ -127,7 +127,8 @@ function App() {
             </a>
         </div>
     </div>
-        <img src={Sunset} class = "background-image" alt = "Mountains during the sunset"></img>
+    <section class="HomeSection">
+      <img src={Sunset} class = "background-image" alt = "Mountains during the sunset"></img>
         <div class = "content" id="Home">
                 <h1><div class="header-name">
                     Christopher Parrett
@@ -136,6 +137,7 @@ function App() {
                     Background image: Rocky Mountains by Christopher Parrett
                 </div></h2>
         </div>
+    </section>
     <div id = "About">
         <h3 style={{marginTop:'5vh'}}>About</h3>
         <h4>Let Me Introduce Myself</h4>

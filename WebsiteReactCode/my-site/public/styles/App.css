@@ -41,6 +41,10 @@ h6{
   text-align: center;
 }
 /*ways we store objects*/
+span{
+  display: block;
+}
+
 .container {
   position: relative; 
   overflow: hidden; 
@@ -187,6 +191,14 @@ body{
   white-space: pre-wrap;
 }
 
-
+.HomeSection{
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
 
 
