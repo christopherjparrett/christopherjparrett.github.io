@@ -228,4 +228,9 @@ body{
   text-align: center; /* Center text inside each contact box */
 }
 
-
+.skillbar .skillbar-percent{
+  display:none;
+}
+a{
+  text-decoration: none;
+}
