@@ -347,7 +347,6 @@ function App() {
         <body class="Region1">
             <br></br>
             <h3 style={{marginTop:'30px',color:'white',marginBottom:'30px'}}>Contact</h3>
-            <h5>Contact Me Here</h5>
             <div class='container' style={{justifyContent:'center'}}>
               <div style={{width: '25%', 
                           padding: '20px',
@@ -368,10 +367,11 @@ function App() {
                           height: '200px',
                           justifyContent: 'center',
                           textAlign: 'center',
-                          alignItems:'center'}}>
+                          alignItems:'center'}}><a href="Christopher.Parrett.work@gmail.com">
                           <img src={EmLogo} alt="Logo" style={{ maxWidth: '100px',borderRadius: '20px', height: 'auto', display: 'inline-block' }} ></img>
                           <h6 style={{justifyContent:'center'}}>Email Me At</h6>
                           <p style={{textAlign:'center'}}>Christopher.Parrett.work@gmail.com</p>
+                          </a>
                           </div>
               <div style={{width: '25%', 
                           padding: '20px',
@@ -380,10 +380,11 @@ function App() {
                           height: '200px',
                           justifyContent: 'center',
                           textAlign: 'center',
-                          alignItems:'center'}}>
+                          alignItems:'center'}}><a href="http://www.linkedin.com/in/christopher-parrett-4591452ba">
                           <img src={LLLogo} alt="Logo" style={{ maxWidth: '100px',borderRadius: '20px', height: 'auto', display: 'inline-block' }} ></img>
                           <h6 style={{justifyContent:'center'}}>Lets Connect</h6>
                           <p style={{justifyContent:'center',textAlign:'center'}}><a target="_blank" rel="noopener noreferrer" href={'http://www.linkedin.com/in/christopher-parrett-4591452ba'}>My LinkedIn Profile</a></p>
+                          </a>
                           </div>
             </div>
              

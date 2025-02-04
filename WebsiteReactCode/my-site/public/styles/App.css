@@ -187,6 +187,11 @@ body{
   white-space: pre-wrap;
 }
 
-
+.skillbar .skillbar-percent{
+  display:none;
+}
+a{
+  text-decoration: none;
+}
 
 
