@@ -3,60 +3,44 @@
 const projects = [
     { 
       id: 1, 
-      name: "Snake AI", 
-      language: "Python", 
-      codeLink: "https://github.com/user/project-a",
-      icon: "🐍",  // Example icon (you can use any icon library here)
-      description: "Description for project1"
+      name: "My Website", 
+      language: "React", 
+      codeLink: "https://github.com/christopherjparrett/christopherjparrett.github.io",
+      icon: "💻",  // Example icon (you can use any icon library here)
+      description: "Developed this website in React with the ability to change design for users on phones or PCs automatically"
     },
     { 
       id: 2, 
-      name: "Project B", 
+      name: "Congress Stock Grabber", 
       language: "Python", 
-      codeLink: "https://github.com/user/project-b",
+      codeLink: "https://github.com/christopherjparrett/HTMLGrabber",
       icon: "🐍",  // Example icon
-      description: "This is my second project"
+      description: "Part of a larger unfinished project to go through all of congresses stock trading data and process it without using external apis"
     },
     { 
       id: 3, 
-      name: "Project C", 
-      language: "C", 
-      codeLink: "https://github.com/user/project-c",
-      icon: "⚙️",  // Example icon
-      description: "A tool built with JavaScript to automate tasks."
+      name: "Pi Cipher", 
+      language: "Python", 
+      codeLink: "https://github.com/christopherjparrett/PiCypher",
+      icon: "🐍",  // Example icon
+      description: "A Cipher that uses pi to determine the dictionary used to replace every letter"
     },
     { 
       id: 4, 
-      name: "Project D", 
-      language: "Java", 
-      codeLink: "https://github.com/user/project-d",
+      name: "Wordle Bot", 
+      language: "C", 
+      codeLink: "https://github.com/christopherjparrett/WordleBot",
       icon: "💎",  // Example icon
-      description: "A tool built with JavaScript to automate tasks."
+      description: "A bot that was built to solve wordle using the most efficient guesses possible."
     },
     { 
       id: 5, 
-      name: "Project E", 
+      name: "Valorant Account Sorter", 
       language: "Python", 
-      codeLink: "https://github.com/user/project-e",
+      codeLink: "https://github.com/christopherjparrett/ValorantAPI",
       icon: "🐍",  // Example icon
-      description: "A tool built with JavaScript to automate tasks."
+      description: "This was a personal project to make a program that would sort valorant accounts by rank automatically with the usage of an external api"
     },
-    { 
-      id: 6, 
-      name: "Project F", 
-      language: "Python", 
-      codeLink: "https://github.com/user/project-e",
-      icon: "🐍",  // Example icon
-      description: "A tool built with JavaScript to automate tasks."
-    },
-    { 
-      id: 7, 
-      name: "Project G", 
-      language: "Python", 
-      codeLink: "https://github.com/user/project-e",
-      icon: "🐍",  // Example icon
-      description: "A tool built with JavaScript to automate tasks."
-    }
   ];
   
   export default projects;

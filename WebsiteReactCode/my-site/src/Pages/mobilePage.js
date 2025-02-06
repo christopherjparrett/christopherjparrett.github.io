@@ -307,10 +307,10 @@ const MobilePage = () => {
               <label>
                 <input
                   type="checkbox"
-                  value="Java"
+                  value="React"
                   onChange={handleLanguageChange}
                 />
-                Java
+                React
               </label>
             </div>
 
