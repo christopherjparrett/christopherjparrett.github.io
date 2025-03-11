@@ -164,43 +164,45 @@ function App() {
         </h2>
       </section>
       </div>
-      <div id="About">
-        <h3 style={{ marginTop: "5vh" }}>About</h3>
-        <h4>Let Me Introduce Myself</h4>
-        <body>
-          <p class="introduction">
-            Hello! I’m Christopher Parrett, a Computer Science major with a
-            passion for software development and machine learning. I’m excited
-            to be nearing the end of my academic journey, with graduation from
-            the University of Central Florida just a year away. My love for
-            technology drives me to create innovative solutions and explore the
-            endless possibilities of machine learning. I look forward to
-            applying my skills and knowledge in real-world projects and making a
-            meaningful impact in the tech industry.
-          </p>
-          <div
-            class="container"
-            style={{ textWrap: "wrap", display: "flex", alignItems: "stretch" }}
-          >
-            <p class="left-container">
-              <div class="CenterText">
-                About Me<br></br>
-              </div>
-              Name: Christopher Parrett<br></br>
-              Location: Florida<br></br>
-              Email: christopher.parrett.work@gmail.com<br></br>
-              Phone: (904) 829-7394 <br></br>
+      <section>
+        <div id="About">
+          <h3 style={{ marginTop: "30vh" }}>About</h3>
+          <h4>Let Me Introduce Myself</h4>
+          <body>
+            <p class="introduction">
+              Hello! I’m Christopher Parrett, a Computer Science major with a
+              passion for software development and machine learning. I’m excited
+              to be nearing the end of my academic journey, with graduation from
+              the University of Central Florida just a year away. My love for
+              technology drives me to create innovative solutions and explore the
+              endless possibilities of machine learning. I look forward to
+              applying my skills and knowledge in real-world projects and making a
+              meaningful impact in the tech industry.
             </p>
-            <p class="right-container">
-              <div class="CenterText">
-                Skills<br></br>
-              </div>
-              <br></br>
-              <SkillBar skills={skills} />
-            </p>
-          </div>
-        </body>
-      </div>
+            <div
+              class="container"
+              style={{ textWrap: "wrap", display: "flex", alignItems: "stretch" }}
+            >
+              <p class="left-container">
+                <div class="CenterText">
+                  About Me<br></br>
+                </div>
+                Name: Christopher Parrett<br></br>
+                Location: Florida<br></br>
+                Email: christopher.parrett.work@gmail.com<br></br>
+                Phone: (904) 829-7394 <br></br>
+              </p>
+              <p class="right-container">
+                <div class="CenterText">
+                  Skills<br></br>
+                </div>
+                <br></br>
+                <SkillBar skills={skills} />
+              </p>
+            </div>
+          </body>
+        </div>
+      </section>
       <div id="Experience">
         <body>
           <div class="Region1">
