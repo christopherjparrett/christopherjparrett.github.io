@@ -307,3 +307,13 @@ a{
   text-align: center;
   /* Center text inside each contact box */
 }
+
+#About{
+  position: relative; /* Prevents the section from appearing "under" the header */
+  margin-top:30vh;
+}
+section{
+  margin: 0;
+  display: flex;
+  position: relative;
+}
