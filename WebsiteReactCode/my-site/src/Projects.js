@@ -54,7 +54,7 @@ const projects = [
       name: "LAMP Stack Website", 
       language: "GroupStacks", 
       codeLink: "https://github.com/christopherjparrett/COP4331LAMPstack",
-      icon: "🐍",  // Example icon
+      icon: "💻",  // Example icon
       description: "This website was build with a LAMP stack with a team of people and allowed for searching a database for information and a display for that info"
     },
   ];
