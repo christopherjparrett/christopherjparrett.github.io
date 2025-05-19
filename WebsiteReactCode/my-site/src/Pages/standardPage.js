@@ -339,6 +339,14 @@ function App() {
                 />
                 React
               </label>
+              <label>
+                <input
+                  type="checkbox"
+                  value="GroupStacks"
+                  onChange={handleLanguageChange}
+                />
+                GroupStacks
+              </label>
             </div>
 
             {/* Display filtered projects */}
