@@ -41,6 +41,22 @@ const projects = [
       icon: "🐍",  // Example icon
       description: "This was a personal project to make a program that would sort valorant accounts by rank automatically with the usage of an external api"
     },
+    { 
+      id: 6, 
+      name: "MERN stack website \"Gerb Benchmark\"", 
+      language: "GroupStacks", 
+      codeLink: "https://github.com/christopherjparrett/GerbBenchmark",
+      icon: "💻",  // Example icon
+      description: "This was a project worked on with a team in my class that obtains benchmark scores for certain human senses"
+    },
+    { 
+      id: 7, 
+      name: "LAMP Stack Website", 
+      language: "GroupStacks", 
+      codeLink: "https://github.com/christopherjparrett/COP4331LAMPstack",
+      icon: "🐍",  // Example icon
+      description: "This website was build with a LAMP stack with a team of people and allowed for searching a database for information and a display for that info"
+    },
   ];
   
   export default projects;
